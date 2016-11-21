@@ -1,8 +1,7 @@
-aka apps:create templater -o test -s gwp-dev
-# https://templater-gwp-dev.alamoapp.octanner.io/
-# ac40aee1a2717b8b13beecce6cbcfce03df94190
-aka builds:auto -r https://github.com/lexiclaire/Templating-Service -b master --username lexiclaire --token ac40aee1a2717b8b13beecce6cbcfce03df94190 -a templater-gwp-dev
-aka builds:output latest -a templater-gwp-dev
+aka apps:create emailextras -o test -s gwp-dev
+# https://emailextras-gwp-dev.alamoapp.octanner.io/
+aka builds:auto -r https://github.com/octanner/emailextras -b master --username lexiclaire --token db0ea80a49bbb337006db93dc9866fa0654c0521 -a octanner-gwp-dev
+aka builds:output latest -a emailextras-gwp-dev
 # /Users/lexi.huefner/.appreciatekit/bin/plugins/builds/index.js:122
         args.ID = builds[0].id;
                            ^
