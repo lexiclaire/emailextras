@@ -2,16 +2,3 @@ aka apps:create emailextras -o test -s gwp-dev
 # https://emailextras-gwp-dev.alamoapp.octanner.io/
 aka builds:auto -r https://github.com/octanner/emailextras -b master --username lexiclaire --token db0ea80a49bbb337006db93dc9866fa0654c0521 -a octanner-gwp-dev
 aka builds:output latest -a emailextras-gwp-dev
-# /Users/lexi.huefner/.appreciatekit/bin/plugins/builds/index.js:122
-        args.ID = builds[0].id;
-                           ^
-
-TypeError: Cannot read property 'id' of undefined
-    at appkit.api.get (/Users/lexi.huefner/.appreciatekit/bin/plugins/builds/index.js:122:28)
-    at connector.request.response_body.bind (/Users/lexi.huefner/.appreciatekit/bin/aka.js:146:5)
-    at IncomingMessage.res.on (/Users/lexi.huefner/.appreciatekit/bin/aka.js:130:7)
-    at emitNone (events.js:91:20)
-    at IncomingMessage.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
-    at _combinedTickCallback (internal/process/next_tick.js:74:11)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
