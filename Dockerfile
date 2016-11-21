@@ -62,7 +62,7 @@ RUN set -xe \
 #FROM quay.octanner.io/base/oct-node:4.4.6-onbuild
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-COPY apps/service/* /usr/src/app
+COPY apps/service/* /usr/src/app/
 RUN mix deps.get
 EXPOSE 4000
 CMD [ "mix", "phoenix.server" ]
