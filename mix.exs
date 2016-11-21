@@ -9,7 +9,7 @@ defmodule TemplateService.Mixfile do
   end
 
   def application do
-    [applications: [:maru]]
+    []
   end
 
   # Dependencies can be Hex packages:
@@ -25,6 +25,6 @@ defmodule TemplateService.Mixfile do
   # Dependencies listed here are available only for this project
   # and cannot be accessed from applications inside the apps folder
   defp deps do
-    [{:maru, "~> 0.10"}]
+    []
   end
 end
