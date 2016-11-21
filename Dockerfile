@@ -63,6 +63,7 @@ RUN set -xe \
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY apps/service/* /usr/src/app/
+COPY config/* /usr/config/
 RUN mix deps.get
 EXPOSE 4000
 CMD [ "mix", "phoenix.server" ]
