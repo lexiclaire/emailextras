@@ -2,8 +2,8 @@ aka apps:create emailextras -o test -s gwp-dev
 # https://emailextras-gwp-dev.alamoapp.octanner.io/
 aka builds:auto -r https://github.com/octanner/emailextras -b master --username lexiclaire --token db0ea80a49bbb337006db93dc9866fa0654c0521 -a octanner-gwp-dev
 aka builds:output latest -a emailextras-gwp-dev
-#Could not find Hex, which is needed to build dependency :maru
-Shall I install Hex? (if running non-interactively, use: "mix local.hex --force") [Yn] ** (Mix) Could not find an SCM for dependency :maru from TemplateService.Mixfile
+#Could not find Hex, which is needed to build dependency :phoenix
+Shall I install Hex? (if running non-interactively, use: "mix local.hex --force") [Yn] ** (Mix) Could not find an SCM for dependency :phoenix from Service.Mixfile
 The command '/bin/sh -c mix deps.get' returned a non-zero code: 1
 ERROR: script returned exit code 1
 Finished: FAILURE
