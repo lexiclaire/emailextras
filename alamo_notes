@@ -1,0 +1,18 @@
+aka apps:create templater -o test -s gwp-dev
+# https://templater-gwp-dev.alamoapp.octanner.io/
+# ac40aee1a2717b8b13beecce6cbcfce03df94190
+aka builds:auto -r https://github.com/lexiclaire/Templating-Service -b master --username lexiclaire --token ac40aee1a2717b8b13beecce6cbcfce03df94190 -a templater-gwp-dev
+aka builds:output latest -a templater-gwp-dev
+# /Users/lexi.huefner/.appreciatekit/bin/plugins/builds/index.js:122
+        args.ID = builds[0].id;
+                           ^
+
+TypeError: Cannot read property 'id' of undefined
+    at appkit.api.get (/Users/lexi.huefner/.appreciatekit/bin/plugins/builds/index.js:122:28)
+    at connector.request.response_body.bind (/Users/lexi.huefner/.appreciatekit/bin/aka.js:146:5)
+    at IncomingMessage.res.on (/Users/lexi.huefner/.appreciatekit/bin/aka.js:130:7)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
