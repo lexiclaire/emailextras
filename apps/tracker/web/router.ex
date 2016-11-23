@@ -8,6 +8,7 @@ defmodule Tracker.Router do
   scope "/tracker", Tracker do
     pipe_through :api
 
+    post "/rewrite", TrackerController, :rewrite
     get "/:redirect", TrackerController, :tracker
   end
     
