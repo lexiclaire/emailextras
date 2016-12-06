@@ -25,6 +25,19 @@ defmodule Service.Router do
     post "/render", TemplaterController, :render  
   end
 
+  scope "/tracker", Service do
+    pipe_through :api
+
+    get "/:redirect", TrackerController, :tracker
+  end
+
+  scope "/rewrite", Service do
+    pipe_through :api
+
+    post "/", RewriterController, :rewrite
+  end
+
+
   # Other scopes may use custom stacks.
   # scope "/api", Service do
   #   pipe_through :api
