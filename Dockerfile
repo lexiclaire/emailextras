@@ -1,4 +1,4 @@
-FROM quay.octanner.io/base/oct-erlang:elixir.0.1
+FROM quay.octanner.io/base/oct-erlang:elixer-1.3.4
 COPY . /usr/src/
 WORKDIR /usr/src/
 RUN yes | mix local.hex 
