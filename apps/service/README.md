@@ -1,5 +1,11 @@
 # Service
 
+## Synopsis
+Service is a phoenix API for Templater and Rewriter 
+
+## Requirements
+1. phoenix v 1.2.1
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`

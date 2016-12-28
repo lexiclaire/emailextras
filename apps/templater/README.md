@@ -1,6 +1,12 @@
 # Templater
 
-**TODO: Add description**
+## Synopsis
+Templater is an email templating service. 
+
+
+## Requirements
+1. elixir v 1.3.2
+
 
 ## Installation
 
